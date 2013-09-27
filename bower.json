@@ -6,7 +6,11 @@
     "jotav <juanvanni@gmail.com>"
   ],
   "description": "Normalize.css cleaned and tweaked for webkit-touch web apps.",
-  "main": "touch-normalize.css",
+  "main": [
+    "touch-normalize.css",
+    "touch-normalize.scss",
+    "touch-normalize.less"
+  ],
   "keywords": [
     "normailize",
     "webkit",
