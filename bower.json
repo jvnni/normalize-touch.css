@@ -1,5 +1,6 @@
 {
-  "name": "touch-normalize"
+  "name": "touch-normalize",
+  "version": "2.1.3touch",
   "homepage": "https://github.com/jota-v/touch-normalize.css",
   "authors": [
     "jotav <juanvanni@gmail.com>"
