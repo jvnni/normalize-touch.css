@@ -7,7 +7,7 @@ All the <em>ie</em> stuff has been wiped out.
 It includes a <strong>css</strong>, <strong>scss</strong> and <strong>less</strong> version of the file.
 
 ###Original project and documentation:
-https://github.com/necolas/normalize.css](https://github.com/necolas/normalize.css)
+[https://github.com/necolas/normalize.css](https://github.com/necolas/normalize.css).
 
 Original Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas).
 
