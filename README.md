@@ -1,4 +1,4 @@
-# Touch normalize
+# Normalize Touch
 
 A version of normalize with some tweaks made for touch-webkit web apps on iOS and Android devices. Specially customized for development of mixed native/web apps using frameworks such as Cordova/Phonegap.
 
