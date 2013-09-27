@@ -4,54 +4,6 @@
    HTML5 display definitions
    ========================================================================== */
 
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-
-audio,
-canvas,
-video {
-    display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-    display: none;
-}
 
 /* ==========================================================================
    Base
@@ -62,6 +14,14 @@ template {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+
+/**
+ * Avoid user selection and native browser menu options on long press in all links.
+ */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
 
 html {
     font-family: sans-serif; /* 1 */
@@ -146,25 +106,6 @@ dfn {
 }
 
 /**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-/**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
 
@@ -220,25 +161,6 @@ sub {
     bottom: -0.25em;
 }
 
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-
-img {
-    border: 0;
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
 
 /* ==========================================================================
    Figures
@@ -257,6 +179,30 @@ figure {
    ========================================================================== */
 
 /**
+ * 1.Return the posibility to users of selecting text in forms 
+ * 2. Avoid a rare color highlight on input tap.
+ */
+
+select,
+input[type="text"]
+input[type="password"]
+input[type="datetime"]
+input[type="datetime-local"]
+input[type="date"]
+input[type="month"]
+input[type="time"]
+input[type="week"]
+input[type="number"]
+input[type="email"]
+input[type="url"]
+input[type="search"]
+input[type="tel"]
+input[type="color"] {
+    -webkit-user-select: auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/**
  * Define consistent border, margin, and padding.
  */
 
@@ -264,16 +210,6 @@ fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-
-legend {
-    border: 0; /* 1 */
-    padding: 0; /* 2 */
 }
 
 /**
@@ -291,15 +227,6 @@ textarea {
     margin: 0; /* 3 */
 }
 
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-
-button,
-input {
-    line-height: normal;
-}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -339,17 +266,6 @@ html input[disabled] {
 }
 
 /**
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-}
-
-/**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
@@ -373,18 +289,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
- * Remove inner padding and border in Firefox 4+.
- */
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
+ * Improve readability and alignment in all browsers.
  */
 
 textarea {
